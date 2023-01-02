@@ -144,7 +144,7 @@ export default function ProductListScreen() {
         <Col className="col text-end">
           <div>
             <Button type="button" onClick={createHandler}>
-              Create Product
+              ADD PRODUCT
             </Button>
           </div>
         </Col>
@@ -165,8 +165,9 @@ export default function ProductListScreen() {
                 <th>ID</th>
                 <th>NAME</th>
                 <th>PRICE</th>
-                <th>CATEGORY</th>
                 <th>BRAND</th>
+                <th>CATEGORY</th>
+                <th>IN STOCK</th>
                 <th>ACTIONS</th>
               </tr>
             </thead>
@@ -176,8 +177,9 @@ export default function ProductListScreen() {
                   <td>{product._id}</td>
                   <td>{product.name}</td>
                   <td>{product.price}</td>
-                  <td>{product.category}</td>
                   <td>{product.brand}</td>
+                  <td>{product.category}</td>
+                  <td>{product.countInStock}</td>
                   <td>
                     <Button
                       type="button"
